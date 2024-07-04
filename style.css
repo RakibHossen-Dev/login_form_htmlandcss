@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(bacground.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top center;
+}
+#parent{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+.first_div{
+    margin-top:22%;
+}
+h1{
+    font-size: 40px;
+    color: orangered;
+    margin-bottom: 20px;
+}
+p{
+    color: #ffff;
+    font-size: 20px;
+}
+.second_div{
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 350px;
+    height: 330px;
+    background:transparent;
+    border-radius: 20px 0;
+    box-shadow: 0 0 20px 0 ;
+}
+.one{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+label{
+    color: #fff;
+    display: block;
+}
+input{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: orangered;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: 0 0 30px 0 #fff;
+}
+button:hover{
+    letter-spacing: 3px;
+    box-shadow: 0 0 30px 0 orangered;
+    background: orangered;
+}
+
+@media screen and (max-width: 720px) {
+    #parent{
+        display: block;
+        margin: 0 auto;
+        
+    }
+  
+    .second_div{
+        
+        box-shadow: 0 0 20px 0 ;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .first_div{
+        margin-top:7%;
+    }
+    .two{
+        padding: 20px;
+    }
+}
